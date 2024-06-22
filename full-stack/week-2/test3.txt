@@ -1,0 +1,5 @@
+[
+    {"text":"play basketball", "author": "puneguy", "points": 50},
+    {"text":"sail the ocean blue", "author": "parekh", "points": 50},
+    {"text":"some bullshit", "author": "me", "points": 50}
+]
