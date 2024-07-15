@@ -15,7 +15,7 @@ app.get('/signup', async function(req,res){
 
     const existingUser = await User.findone({email: username});
 
-    if(exisitingUser){
+    if(existingUser){
         return res.status(400).send("User already exists!");
     }
     
