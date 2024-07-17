@@ -1,0 +1,44 @@
+
+p{
+    font-family: Roboto;
+}
+
+.title{
+    font-weight:bold;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(27, 27, 27);
+    margin-bottom: 0px;
+}
+.subheading{
+    font-size:20px;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(149, 144, 144);
+
+}
+.description{
+    font-size:20px;
+    text-align: center;
+    margin-top: 0px;
+    color: rgb(106, 101, 101);
+}
+
+.signup-container{
+    text-align: center;
+
+}
+.signup-button{
+    background-color: rgb(56, 128, 9);
+    padding: 15px 32px;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Verdana;
+}
+.signup-button:hover{
+    background-color: aliceblue;
+    color:rgb(56, 128, 9);
+    transition: 2s;
+
+}
