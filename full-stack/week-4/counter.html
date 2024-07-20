@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <script>
+            count = 0;
+            function minus(){
+                count--;
+                document.getElementById("display").innerHTML = count;
+            }
+
+            function plus(){
+                count++;
+                document.getElementById("display").innerHTML = count;
+            }
+        </script>
+        <div>
+            
+            <button onclick="minus()">-</button> 
+            <button onclick="plus()">+</button> <br></br>
+            <div id="display"></div>
+        </div>
+    </body>
+</html>

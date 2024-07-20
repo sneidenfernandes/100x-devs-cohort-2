@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <input id="principal" placeholder="Enter Principal"></input><br>
+        <input id="rate" placeholder="Enter Rate"></input><br>
+        <input id="time" placeholder="Enter Time"></input><br>
+        <button onclick="calculate()">Calculate</button>
+        <div id="fv"></div>
+    </body>
+    <script>
+        function calculate(){
+            const principal = document.getElementById("principal").value;
+            const rate = document.getElementById("rate").value;
+            const time = document.getElementById("time").value;
+            let fv = principal * (1+(rate/100))**2;
+
+            document.getElementById("fv").innerHTML  = fv.toString();
+        }
+    </script
+</html>
