@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <div id="buttonParent">
+        </div>
+    <script>
+        // state of the app
+        let state = {
+            count: 0
+        }
+        // what happens on button press
+        function onButtonPress(){
+            state.count ++;
+            buttonComponentReRender()
+        }
+
+        // code to alter the button when the state changes. 
+        function buttonComponentReRender(){
+            console.log("works.")
+            document.getElementById("buttonParent").innerHTML = "";
+            const component =  buttonComponent(state.count);
+            document.getElementById("buttonParent").appendChild(component);
+        }
+
+        // create button.
+        function buttonComponent(count){
+            const button = document.createElement("button");
+            button.innerHTML = `Counter ${count}`;
+            button.setAttribute("onclick", 'onButtonPress()');
+            return button;
+        }
+
+        buttonComponentReRender();
+    </script>
+
+
+</body>    
+</html>
