@@ -4,35 +4,38 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [title, setTitle] = useState("my name is harkirat");
 
-  function updateTitle(){
-    setTitle("my name is " + Math.random());
-    
-  }      
+  const [counter,setCounter] = useState(0);
+  const [inputValue, setInputValue] = useState(1);
 
-  return (
-    <div>
-      <button onClick={updateTitle}>Update the title</button>
-      <Header title={title}></Header>
-      <Header title="harkirat2"></Header>
-      <Header title="harkirat2"></Header>
-      <Header title="harkirat2"></Header>
-      <Header title="harkirat2"></Header>
-      <Header title="harkirat2"></Header>
+  let count = 0;
+  for(let i = 1; i <= inputValue; i++){
+    count = count + i;
+  }
 
-      </div>
-    
-  )
-}
 
-function HeaderWithButton(){
-  
-}
 
-const Header = React.memo(function({title}){
   return <div>
-    {title}
+    <input onChange={
+      function(e){
+        setInputValue(e.target.value);
+      }
+    } placeholder={"Find sum from 1 to n"}></input>
+    <br />
+    <div>Sum from 1 to {inputValue} is {count}</div>
+  
+    <button onClick={()=>{
+      setCounter(counter+1);
+    }}>Counter ({counter})</button>
   </div>
-})
+
+
+}
+
+
+
+
+
+
+
 export default App
