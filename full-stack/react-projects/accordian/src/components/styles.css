@@ -1,0 +1,19 @@
+
+
+.wrapper{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background: rgba(216, 223, 150, 0.452);
+    font-weight: 300;
+}
+
+.item{
+    font-weight: bold;
+    background-color: beige;
+    margin-bottom: 50px;
+}
+
+
+.description{
+    margin-bottom: 50px;
+}
+

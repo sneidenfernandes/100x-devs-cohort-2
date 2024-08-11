@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   font-family: sans-serif
+
+}
+
+
+.email{
+    color: grey;
+    margin-top: 20px;
+    
+}
+
+.input-box{
+    width: 400px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding:10px;
+    margin-bottom: 20px
+
+
+}
+
+.privacy-policy{
+    color: grey
+}
+
+.button{
+    color: white;
+    background-color: rgb(105, 152, 240);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:100px;
+    padding-right:100px;
+    border-radius:20px;
+    margin-left: 75px;
+    
+}
+
+
