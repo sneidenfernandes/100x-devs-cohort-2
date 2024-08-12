@@ -14,13 +14,16 @@ export const Assignment3 = () => {
 
     // Your code starts here
     // reducer
-    const totalValue = useMemo(() => {
-        let totalValue = 0;
-        for (let i = 0; i < items.length; i++) {
-            totalValue = totalValue + items[i].value;
-        }
-        return totalValue    
-    }, [items])
+    // const totalValue = useMemo(() => {
+    //     let totalValue = 0;
+    //     for (let i = 0; i < items.length; i++) {
+    //         totalValue = totalValue + items[i].value;
+    //     }
+    //     return totalValue    
+    // }, [items])
+
+
+
     
     // Your code ends here
     return (
