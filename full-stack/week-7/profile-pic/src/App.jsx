@@ -7,7 +7,7 @@ function App() {
 
   return (
   
-    <ProfilePic/>
+    <ProfilePic name="Rita Corriea" age="32" city="London" followerCount={80} likeCount={803} photoCount={1.4}  />
   )
 }
 
