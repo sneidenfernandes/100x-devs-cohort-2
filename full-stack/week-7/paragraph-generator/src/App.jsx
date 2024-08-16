@@ -1,14 +1,13 @@
 import { useState } from 'react'
-
 import './App.css'
-import CustomRenderer from './components/customRenderer'
+import Para from './components/Para'
 
 
 function App() {
   
 
   return (
-    <CustomRenderer/>
+    <Para/>
   )
 }
 
