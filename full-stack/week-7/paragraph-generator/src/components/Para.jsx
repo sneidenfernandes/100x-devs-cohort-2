@@ -23,6 +23,7 @@ export default function Para(){
                 <button className='generate-button' onClick={handleButtonclick}
                 >Generate</button>
             </div>
+            
             <div className='display-box'>{generatedPara}</div>
 
         </div>
