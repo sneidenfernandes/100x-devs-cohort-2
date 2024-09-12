@@ -6,16 +6,17 @@ import Button from "../components/Button"
 import BottomWarning from "../components/BottomWarning"
 import { useState } from "react"
 import {useNavigate} from "react-router-dom";
+import axios from 'axios';
 
-const stupidFunciton = () => {
-    console.log("Stupid function working.")
-}
+console.log("This shit works.")
+
 
 export default function SignUp(){
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
     return (
         <>
         <div className="bg-slate-300 h-screen flex justify-center">
@@ -37,19 +38,20 @@ export default function SignUp(){
                 }}/>
                 <Button label={"Sign up"} onClick={async ()=>{
                     const response = await axios.post("http://localhost:3000/api/v1/user/signup", {
-                        username,
+                        email,
                         firstName,
                         lastName,
                         password
                     });
 
                     localStorage.setItem("token", response.data.token)
-                    navigate("/dashboard")
+                    navigate("/dashboard");
                 }}/>
                 </div>
                 <BottomWarning label={"Already have an account?"} buttonText={"Sign in"} to={"/signin"}/>
             </div>
         </div>
+
         </>
     )
 }

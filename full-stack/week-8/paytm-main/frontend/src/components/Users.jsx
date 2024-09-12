@@ -1,6 +1,6 @@
 
 import {useEffect, useState} from 'react'
-import {Button} from "./Button";
+import Button from "./Button";
 import axios from "axios";
 import {useNavigate} from "react-router-dom";
 
@@ -18,6 +18,11 @@ export default function Users(){
         })
     },[filter]);
 
+    let key = 0;
+    function counter(){
+        return key+1;
+    }
+
     return (
 
        <>
@@ -30,14 +35,14 @@ export default function Users(){
             }} type='text' placeholder="Search Users..." className="w-full px-2 py-1 border rounded border-slate-200"></input>
        </div>
        <div>
-            {users.map(user=> <User user={user}/>)}
+            {users.map(user=> <User key={counter()} user={user}/>)}
        </div>
        </>
      
     )
 }         
 
-function User({user}){
+function User({user,key}){
     const navigate = useNavigate();
 
     return <div className="flex justify-between">
