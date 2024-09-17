@@ -1,0 +1,11 @@
+.flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+
+.lightblue{
+    width:50px;
+    background-color: lightblue;
+}
