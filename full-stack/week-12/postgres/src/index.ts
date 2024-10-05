@@ -5,6 +5,8 @@ const client = new Client({
 
 });
 
+
+
 async function createUsersTable() {
   try {
     await client.connect();
@@ -36,9 +38,9 @@ async function createAddressesTable() {
        city VARCHAR(100) NOT NULL,
        country VARCHAR(100) NOT NULL,
        street VARCHAR(255) NOT NULL,
-       pincode VARCHAR(20)
+       pincode VARCHAR(20),
        created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-       FOREIGN KEY (user_id) REFRENCES users(id) ON DELETE CASCADE
+       FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
        )
       `);
   
@@ -62,5 +64,3 @@ async function insertUserData(username: string, password: string, email: string)
 }
 
 
-createUsersTable();
-createAddressesTable();
