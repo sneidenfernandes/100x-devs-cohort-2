@@ -1,0 +1,22 @@
+
+
+.container{
+    width: 50vh;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+
+.movie-item{
+    color: white;
+}
+
+.title{
+    color: white;
+    font-weight: 500;
+}
