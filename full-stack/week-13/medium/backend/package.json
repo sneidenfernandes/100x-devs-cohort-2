@@ -5,13 +5,23 @@
     "deploy": "wrangler deploy --minify"
   },
   "dependencies": {
-    "@prisma/client": "^5.20.0",
+    "@prisma/client": "^5.21.0",
     "@prisma/extension-accelerate": "^1.2.1",
-    "hono": "^4.6.4",
-    "prisma": "^5.20.0"
+    "hono": "^4.6.5",
+    "my-something-something": "^1.0.4",
+    "prisma": "^5.21.0",
+    "something-something": "^0.0.1",
+    "zd": "^0.0.0",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240925.0",
     "wrangler": "^3.79.0"
-  }
+  },
+  "version": "1.0.0",
+  "description": "``` npm install npm run dev ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

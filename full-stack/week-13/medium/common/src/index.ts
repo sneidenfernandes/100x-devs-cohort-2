@@ -22,14 +22,13 @@ export type SigninInput = z.infer<typeof signUpInput>
 export const createBlogInput = z.object({
     title: z.string(),
     content: z.string(),
-    id: z.number()
 });
 
 export type CreateBlogInput = z.infer<typeof createBlogInput>;
 
 export const updateBlogInput = z.object({
-    title: z.string(),
-    content: z.string(),
+    title: z.string().optional(),
+    content: z.string().optional(),
     id: z.number()
 
 });
