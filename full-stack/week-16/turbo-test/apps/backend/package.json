@@ -1,0 +1,5 @@
+{
+    "scripts":{
+        "build" : "esbuild src/index.ts --platform=node --bundle --outdir=dist"
+    }
+}
